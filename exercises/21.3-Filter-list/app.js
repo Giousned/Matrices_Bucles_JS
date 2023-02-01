@@ -2,4 +2,32 @@ let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','L
 
 //declare your function here
 
-console.log(filterByName(names, 'am'));
+function filterByName (names,cadena){
+  return names.filter(function(names){
+    return names.toLowerCase().includes(cadena);
+  });
+}
+
+
+/* IGUAL PERO CON FUNCION FLECHA
+
+function filterByName (names,cadena){
+    return names.filter(names => names.toLowerCase().includes(cadena));
+}
+
+*/
+
+console.log(filterByName(names,"am"));
+
+
+/* FUNCIONA SACADO DE INTERNET
+
+function filterByName (query) {
+  return names.filter(function(el) {
+      return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
+  })
+}
+
+
+console.log(filterByName('am'));
+*/
