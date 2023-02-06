@@ -5,6 +5,21 @@ let counts={};
 
 const letras = [];
 
+for(let i of par){
+    const letter = i.toLowerCase();
+    
+    if(letter == " ") continue;
+    else if(counts[letter] == undefined){
+                counts[letter] = 1;
+    } 
+    else{
+                counts[letter] = counts[letter] + 1;
+            }
+}
+
+console.log(counts);
+
+/* OTRA SOLUCION
 for(let i in par){
     const letter = par[i].toLowerCase();
     
@@ -18,3 +33,4 @@ for(let i in par){
 }
 
 console.log(counts);
+*/

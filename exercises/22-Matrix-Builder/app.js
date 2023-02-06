@@ -2,11 +2,35 @@
 function matrixBuilder (entero){
 
     let matrizFinal = [];
+      
+      for (let i = 0; i < entero; i++) {
+
+        let nuevaFila = [];
+
+        for (let j = 0; j < entero; j++) {
+
+            let numero = Math.floor(Math.random()*2);  
+            nuevaFila.push(numero);
+
+        }
+
+      matrizFinal.push(nuevaFila);
+
+  }
+
+  return matrizFinal;
+
+}
+
+console.log(matrixBuilder(5))
+
+/* OTRA SOLUCION
+function matrixBuilder (entero){
+
+    let matrizFinal = [];
 
     const crearFila = () =>{
-
       let nuevaFila = [];
-      
       for (let i = 0; i < entero; i++) {
 
         let numero = Math.floor(Math.random()*2);  
@@ -15,19 +39,15 @@ function matrixBuilder (entero){
       }
 
       return nuevaFila;
-
     }
 
   for (let j = 0; j < entero; j++) {
-
     matrizFinal.push(crearFila());
-
   }
 
   return matrizFinal;
 }
-
-console.log(matrixBuilder(5))
+*/
 
 
 /* OTRA SOLUCION

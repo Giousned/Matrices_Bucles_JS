@@ -4,3 +4,9 @@ myArray.forEach(function(item, index, arr){
     // The value of the item is
     if(item%14==0) console.log(item);
 });
+
+/* OTRA SOLUCION
+myArray.forEach(item => {
+    if(item%14==0) console.log(item);
+});
+*/

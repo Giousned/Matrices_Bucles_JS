@@ -6,7 +6,14 @@ let newArray = [];
 
 newArray = theBools.map(function(number){
     if (number==1) return "wiki";
-    else if (number==0) return "woko";
+    else return "woko";
 });
 
 console.log(newArray);
+
+/* OTRA SOLUCION
+newArray = theBools.map(function(number){
+    if (number==1) return "wiki";
+    else if (number==0) return "woko";
+});
+*/

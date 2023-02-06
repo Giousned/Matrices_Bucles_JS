@@ -19,8 +19,10 @@ function getParkingLotState (param){
 
         if (param[i][j]===2){state.availableSlots = state.availableSlots +1;}
         else if (param[i][j]===1){state.occupiedSlots = state.occupiedSlots +1;}
-          state.totalSlots = state.availableSlots + state.occupiedSlots;
+        
       }
+
+      state.totalSlots = state.availableSlots + state.occupiedSlots;
 
     }
   return state;
@@ -28,7 +30,7 @@ function getParkingLotState (param){
 
 console.log(getParkingLotState(parking_state))
 
-/* SOLUCION DE ELLOS
+/* SOLUCION DADA
 function getParkingLotState(param) {
   let state = {
     totalSlots: 0,

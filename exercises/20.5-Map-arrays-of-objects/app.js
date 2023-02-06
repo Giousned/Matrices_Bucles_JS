@@ -22,7 +22,11 @@ let simplifier = function (person) {
 
 	}
 
-	return "Hello, my name is " + person.name + " and I am " + calcularEdad(person.birthDate) + " years old";
+	return `Hello, my name is ${person.name} and I am ${calcularEdad(person.birthDate)} years old`;
 }
 
 console.log(people.map(simplifier));
+
+/* OTRA SOLUCION
+	return "Hello, my name is " + person.name + " and I am " + calcularEdad(person.birthDate) + " years old";
+*/

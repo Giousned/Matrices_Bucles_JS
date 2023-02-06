@@ -12,8 +12,14 @@ let resultingNames = allNames.filter(function(el){
 */
 
 let resultingNames = allNames.filter(function(names){
-    if (names.startsWith('R')==true) return (allNames)
+    return names.startsWith('R');
   });
 
 
 console.log(resultingNames);
+
+/* OTRA SOLUCION
+let resultingNames = allNames.filter(function(names){
+    if (names.startsWith('R')==true) return (allNames)
+  });
+*/

@@ -7,3 +7,9 @@ let prepender = function(name){
 //your code here
 
 console.log(names.map(prepender));
+
+/* OTRA SOLUCION
+let prepender = function(name){
+	return `My name is: ${name}`;
+};
+*/

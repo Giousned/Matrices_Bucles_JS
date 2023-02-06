@@ -2,37 +2,32 @@ let list_of_numbers = [4, 80, 85, 59, 37,25, 5, 64, 66,	81,20, 64, 41, 22, 76,76
 
 // your code here
 
-function mergeTwoList(array){
-    let odd = []
-    let even = []
+function mergeTwoList (array){
 
-    for (let i = 0; i < array.length; i++) {
-        array[i] % 2 == 0 ? even.push(array[i]) : odd.push(array[i])
-    }
+    let odd = [];
+    let even = [];
 
-    return odd.concat(even)
+    array.forEach(element => {
+        if (element%2 != 0) odd.push(element);
+        else even.push(element);
+    });
+
+    return odd.concat(even);
 }
 
 console.log(mergeTwoList(list_of_numbers));
 
-/* MIO QUE NO SE PORQUE DA ERROR
 
-let arreglonumeros = [];
-let odd = [];
-let even = [];
-let sumajuntos =[];
+/* SOLUCION DADA
+function mergeTwoList(array){
+    let odd = [];
+    let even = [];
 
-function mergeTwoList (arreglonumeros){
-    arreglonumeros.forEach(element => {if (element%2!=0) 
-        odd.push(element);
-    });
-    arreglonumeros.forEach(element => {if (element%2==0) 
-        even.push(element);
-    });
+    for (let i = 0; i < array.length; i++) {
+        array[i] % 2 == 0 ? even.push(array[i]) : odd.push(array[i])
+    };
 
-    sumajuntos = odd.concat(even);
-
-    return sumajuntos;
+    return odd.concat(even);
 }
 
 console.log(mergeTwoList(list_of_numbers));

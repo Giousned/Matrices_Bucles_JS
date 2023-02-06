@@ -11,3 +11,8 @@ let myStupidArray = generateRandomArray();
 let totalItems = myStupidArray.length;
 let theLastOne = myStupidArray[totalItems-1];
 console.log(theLastOne);
+
+/* OTRA SOLUCION 
+let theLastOne = myStupidArray[myStupidArray.length-1];
+console.log(theLastOne);
+*/

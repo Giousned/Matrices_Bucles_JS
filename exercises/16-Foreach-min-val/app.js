@@ -2,10 +2,22 @@ let myArray = [3344,34334,454543,342534,4563456,3445,23455,234,262,2335,43323,43
 
 //your code here
 
-let menor=999999999999999999999999;
+let menor = myArray[0];
 
-myArray.forEach(function(item){
-    if (item<menor) menor=item;
+myArray.forEach(item => {
+    if (item < menor) menor = item;
 });
 
 console.log(menor);
+
+/* OTRA SOLUCION
+
+let menor=999999999999999999999999;
+
+myArray.forEach(function(item){
+    if (item < menor) menor = item;
+});
+
+console.log(menor);
+
+*/
